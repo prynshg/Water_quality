@@ -12,7 +12,7 @@ st.write('Give your data below')
 with open('trained_model.pkl', 'rb') as f:
   model = pickle.load(f)
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.text_input('The URL link','https://thingspeak.com/channels/2029314/feed.csv')
 if uploaded_file is not None:
   df = pd.read_csv(uploaded_file)
   st.write(df.describe())
