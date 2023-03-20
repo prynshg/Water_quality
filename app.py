@@ -8,7 +8,7 @@ st.title('Water Quality Prediction')
 
 st.write('Give your data below')
 
-with open('Water_quality/trained_model.pkl', 'rb') as f:
+with open('trained_model.pkl', 'rb') as f:
   model = pickle.load(f)
 
 uploaded_file = st.file_uploader("Choose a file")
