@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 # import pickle
+import sklearn
 import plotly.express as px
 import numpy as np
 
