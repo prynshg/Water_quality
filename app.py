@@ -1,16 +1,8 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
-from keras.models import load_model
 import streamlit as st
-import seaborn as sns
 import pickle
 import plotly.express as px
-from sklearn.ensemble import RandomForestClassifier
-import xgboost as xgb
 import numpy as np
-from sklearn.metrics import classification_report
 
 st.title('Water Quality Prediction')
 
