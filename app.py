@@ -27,7 +27,7 @@ if uploaded_file is not None:
   fig = px.scatter(df, x="ph", y="Turbidity", template="plotly_dark")
   st.write(fig)
   st.write(potability)
-  st.write(Message)
+  st.write("Message")
   if (potability.iloc[0].max() == 1):
     st.write("Fit for drinking")
   else:
