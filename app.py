@@ -24,8 +24,7 @@ if uploaded_file is not None:
   predictions = model.predict_proba(df)
   predictions = np.where(predictions[:, 1] >= 0.5, 1, 0)
   potability = pd.DataFrame(predictions, columns=['Potability'])
-  potability[0]=0
-  potability[1]=1
+  potability[potability][0]=0
   fig = px.scatter(df, x="ph", y="Turbidity", template="plotly_dark")
   st.write(fig)
   st.write(potability)
