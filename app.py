@@ -28,8 +28,9 @@ if uploaded_file is not None:
   potability.loc[1]=0
   fig = px.scatter(df, x="ph", y="Turbidity", template="plotly_dark")
   st.write(fig)
+  st.write("Prediction of potability using the values of TDS and Turbidity")
   st.write(potability)
-  st.write("Message")
+  st.write("Output")
   if (potability.iloc[0].max() == 1):
     st.write("Fit for drinking")
   else:
