@@ -26,8 +26,8 @@ if uploaded_file is not None:
   potability = pd.DataFrame(predictions, columns=['Potability'])
   fig = px.scatter(df, x="ph", y="Turbidity", template="plotly_dark")
   st.write(fig)
-  potability[0]=0
-  potability[1]=0
+  potability['0']=0
+  potability['1']=0
   st.write("WEB APP SCREEN")
   st.write("Prediction of potability using ")
   st.write("the values of TDS and Turbidity")
