@@ -31,7 +31,7 @@ if uploaded_file is not None:
   st.write("the values of TDS and Turbidity")
   st.write(potability)
   st.write("Output")
-  if (potability.iloc[0].max() == 1):
+  if (potability.iloc[1].max() == 1):
     st.write("Fit for drinking")
   else:
     st.write("Unfit for drinking")
